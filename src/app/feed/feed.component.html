@@ -1,4 +1,24 @@
-<h5>feed works!</h5>
+<h2>{{title.title}}</h2>
+<div>
+    <div>
+        <label for="search">{{label.search}}</label>
+    </div>
+    <div>
+        [(ngModel)]
+        <input type="text" [(ngModel)]="filter" name="search">
+    </div>
+    <div>
+        [ngModel]
+        <input type="text" [ngModel]="filter" name="search">
+    </div>
+    <div>
+        (ngModel)
+        <input type="text" (ngModel)="filter" name="search">
+    </div>
+    <div>
+        {{filter}}
+    </div>
+</div>
 <div class="product">
     {{6+7}}
     <div>

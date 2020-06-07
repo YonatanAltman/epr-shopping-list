@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CartComponent } from './cart/cart.component';
 import { FeedComponent } from './feed/feed.component';
-import { FeedclsComponent } from './feedcls/feedcls.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -14,11 +14,11 @@ import { FeedclsComponent } from './feedcls/feedcls.component';
     HeaderComponent,
     CartComponent,
     FeedComponent,
-    FeedclsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

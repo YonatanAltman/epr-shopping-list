@@ -3,6 +3,7 @@ $header-hight: 10vh;
 :host {
     display: grid;
     grid-template-rows: $header-hight 100vh - $header-hight;
+    direction: rtl;
 }
 .wrapper {
     outline: $test;

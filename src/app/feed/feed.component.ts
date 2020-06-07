@@ -22,6 +22,15 @@ export interface IProduct {
   styleUrls: ['./feed.component.scss']
 })
 export class FeedComponent implements OnInit {
+  title = {
+    title: 'בחר מוצרים:',
+    search: 'אנא הקלד שם מוצר',
+  };
+  label = {
+
+    search: 'אנא הקלד שם מוצר',
+  }
+  filter: string;
   product: IProduct = {
     catalogId: 'p0001',
     name: 'מסיכת קורונה',
