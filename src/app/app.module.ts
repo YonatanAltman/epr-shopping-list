@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CartComponent } from './cart/cart.component';
 import { FeedComponent } from './feed/feed.component';
+import { FeedclsComponent } from './feedcls/feedcls.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CartComponent,
-    FeedComponent
+    FeedComponent,
+    FeedclsComponent
   ],
   imports: [
     BrowserModule,
