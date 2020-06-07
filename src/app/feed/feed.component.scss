@@ -1,5 +1,10 @@
 :host {
     padding: 60px;
+    button {
+        border-radius: 20px;
+        min-width: 80px;
+        cursor: pointer;
+    }
 }
 
 .lamp {
@@ -9,14 +14,28 @@
     background-color: white;
     display: grid;
     place-content: center;
+    transition: all ease-in-out 0.3s;
 }
 .on {
     background-color: yellow;
 }
 
-.products {
+.list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     overflow: auto;
     height: 40vh;
+    column-gap: 15px;
+    row-gap: 15px;
+    .product {
+        background-color: darkblue;
+        color: wheat;
+        &:hover {
+            color: black;
+            background-color: rgb(47, 231, 255);
+            cursor: pointer;
+            transform: rotate(10deg);
+        }
+        transition: all ease-in-out 0.3s;
+    }
 }
