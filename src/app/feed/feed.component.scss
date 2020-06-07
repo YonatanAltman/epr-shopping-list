@@ -1,3 +1,22 @@
 :host {
     padding: 60px;
 }
+
+.lamp {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    display: grid;
+    place-content: center;
+}
+.on {
+    background-color: yellow;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    overflow: auto;
+    height: 40vh;
+}

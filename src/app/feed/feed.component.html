@@ -19,17 +19,23 @@
     </div>
 </div>
 <div class="product">
-    {{6+7}}
-    <div>
-
-        {{product.name}}
+    <button (click)="changeLightState()">{{btn.switch}}</button>
+    <div class="lamp {{light}}" *ngIf="light">
+        {{light}}
     </div>
-    <div>
+    {{!!light}}
+</div>
+<div class="products">
 
-        {{product.price}}
+    <div *ngFor="let p of products">
+        <div>
+            {{p.name}}
+        </div>
+        <div>
+            {{p.price|currency:'₪'}}
+        </div>
+        <div>
+            <img [src]="p.img" [alt]="p.name" srcset="">
+        </div>
     </div>
-    <div>
-        <img [src]="product.img" alt="" srcset="">
-    </div>
-
 </div>
