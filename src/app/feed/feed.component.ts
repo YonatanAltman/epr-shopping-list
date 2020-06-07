@@ -30,7 +30,11 @@ export class FeedComponent implements OnInit {
 
     search: 'אנא הקלד שם מוצר',
   }
-  filter: string;
+  btn = {
+
+    search: 'חפש',
+  }
+  filter = 'אוריה';
   product: IProduct = {
     catalogId: 'p0001',
     name: 'מסיכת קורונה',
@@ -48,5 +52,17 @@ export class FeedComponent implements OnInit {
 
   ngOnInit() {
   }
+  onClick() {
+    console.log(this.filter);
 
+    if (!this.filter) {
+      this.filter = 'יהונתן';
+    } else {
+      this.filter += ' אורי';
+    }
+
+  }
+  onBlur() {
+    this.onClick();
+  }
 }

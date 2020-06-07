@@ -9,13 +9,12 @@
     </div>
     <div>
         [ngModel]
-        <input type="text" [ngModel]="filter" name="search">
+        <input type="text" (blur)="onBlur()" [ngModel]="filter" name="search">
     </div>
     <div>
-        (ngModel)
-        <input type="text" (ngModel)="filter" name="search">
+        (click)<button (click)="onClick()">{{btn.search}}</button>
     </div>
-    <div>
+    <div (dblclick)="filter = ''">
         {{filter}}
     </div>
 </div>
